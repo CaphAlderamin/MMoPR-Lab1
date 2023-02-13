@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 import os
 
-faces_path = "E:\\Study\ТПУ МАГИСТРАТУРА\\2 Семестр\\Математические методы распознавания образов\\Лаб 1\\Faces"
+faces_path = "E:\\Study\\TPU MAGISTRACY\\2 Term\\Mathematical methods of pattern recognition\\Lab 1\\Faces"
 
 
 def get_face_encodings():
@@ -12,7 +12,6 @@ def get_face_encodings():
 
     for i, name in enumerate(face_names):
         face = fr.load_image_file(f"{faces_path}\\Known\\{name}")
-        face_encodings.append(fr.face_encodings(face)[0])
         face_encodings.append(fr.face_encodings(face)[0])
 
         face_names[i] = name.split(".")[0]
